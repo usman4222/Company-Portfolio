@@ -7,6 +7,7 @@ import Service from '../components/Service';
 import Portfolio from '../components/Portfolio';
 import Advantage from '../components/Atvantage';
 import Testimonial from '../components/Testimonial';
+import Discuss from '../components/Discuss';
 
 export default class LandingPage extends Component {
   componentDidMount() {
