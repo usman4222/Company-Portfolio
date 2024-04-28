@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import DiscussProjectPage from './pages/DiscussProjectPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import ProjectPage from './pages/ProjectPage';
+import TeamPage from './pages/Team';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/discuss-project' element={<DiscussProjectPage />} />
         <Route path='/project/:id' element={<ProjectDetailPage />} />
         <Route path='/project' element={<ProjectPage />} />
+        <Route path='/team' element={<TeamPage />} />
       </Routes>
     </BrowserRouter>
   );

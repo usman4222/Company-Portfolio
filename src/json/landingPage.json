@@ -127,57 +127,57 @@
         {
             "name": "Rach David",
             "position": "CEO",
-            "imageUrl": "assets/images/CEO.jpg"
+            "imageUrl": "../assets/images/CEO.jpg"
         },
         {
             "name": "Pauline Sydney",
             "position": "HRD",
-            "imageUrl": "assets/images/HRD.jpg"
+            "imageUrl": "../assets/images/HRD.jpg"
         },
         {
             "name": "Granger Watterson",
             "position": "Finance",
-            "imageUrl": "assets/images/Finance.jpg"
+            "imageUrl": "../assets/images/Finance.jpg"
         },
         {
             "name": "Tom Jimmy",
             "position": "Project Manager",
-            "imageUrl": "assets/images/Project-manager.jpg"
+            "imageUrl": "../assets/images/Project-manager.jpg"
         },
         {
             "name": "Jim Hendrix",
             "position": "Front-end Developer",
-            "imageUrl": "assets/images/Frontend1.jpg"
+            "imageUrl": "../assets/images/Frontend1.jpg"
         },
         {
             "name": "Calvin Max",
             "position": "Front-end Developer",
-            "imageUrl": "assets/images/Frontend2.jpg"
+            "imageUrl": "../assets/images/Frontend2.jpg"
         },
         {
             "name": "Hawkins Jim",
             "position": "Back-end Developer",
-            "imageUrl": "assets/images/Backend1.jpg"
+            "imageUrl": "../assets/images/Backend1.jpg"
         },
         {
             "name": "Don Bizaro",
             "position": "Back-end Developer",
-            "imageUrl": "assets/images/Backend2.jpg"
+            "imageUrl": "../assets/images/Backend2.jpg"
         },
         {
             "name": "Bill Markinson",
             "position": "Mobile Developer",
-            "imageUrl": "assets/images/Mobile1.jpg"
+            "imageUrl": "../assets/images/Mobile1.jpg"
         },
         {
             "name": "Igor Kavarov",
             "position": "Mobile Developer",
-            "imageUrl": "assets/images/Mobile2.jpg"
+            "imageUrl": "../assets/images/Mobile2.jpg"
         },
         {
             "name": "Freddie Curl",
             "position": "UI/UX Designer",
-            "imageUrl": "assets/images/UIUX2.jpg"
+            "imageUrl": "../assets/images/UIUX2.jpg"
         },
         {
             "name": "Monica Lovegood",
