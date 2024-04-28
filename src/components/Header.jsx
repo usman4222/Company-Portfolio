@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';;
-import Button from '../components/Button';
+import Button from '../elements/Button';
 import BrandIcon from './BrandIcon';
 import { Fade } from 'react-reveal';
 
 export default function Header(props) {
   const { location } = props;
   const [isCollapse, setIsCollapse] = useState(false);
-  const path = location.pathname;
+  const path = location?.pathname; // Use optional chaining to avoid errors if location is undefined
+
+  // Log location and path
+  console.log('Location:', location);
+  console.log('Path:', path);
 
   return (
     <header className="header">

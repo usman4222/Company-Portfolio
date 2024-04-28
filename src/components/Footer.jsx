@@ -1,6 +1,6 @@
 import React from 'react';
 import BrandIcon from './BrandIcon';
-import Button from '../components/Button';
+import Button from '../elements/Button';
 
 export default function Footer() {
   return (

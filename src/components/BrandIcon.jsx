@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import Button from '../components/Button';
+import Button from '../elements/Button';
 
 
 export default function BrandIcon() {
