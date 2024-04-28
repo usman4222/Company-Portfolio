@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './assets/css/styles.css';
 import LandingPage from './pages/LandingPage';
 import DiscussProjectPage from './pages/DiscussProjectPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import ProjectPage from './pages/ProjectPage';
 import TeamPage from './pages/Team';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/project/:id' element={<ProjectDetailPage />} />
         <Route path='/project' element={<ProjectPage />} />
         <Route path='/team' element={<TeamPage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import BuildWebsite from '../assets/images/Startup.png';
 import { Fade } from 'react-reveal';

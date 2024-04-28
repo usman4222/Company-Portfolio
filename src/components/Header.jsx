@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-import { Transition } from '@headlessui/react';;
+import Fade from 'react-reveal/Fade';
+import { Transition } from '@headlessui/react';
 import Button from '../elements/Button';
-import BrandIcon from './BrandIcon';
-import { Fade } from 'react-reveal';
+import BrandIcon from '../components/BrandIcon';
+import { useLocation } from 'react-router-dom'; // Import useLocation hook from react-router-dom
 
-export default function Header(props) {
-  const { location } = props;
+export default function Header() {
+  const location = useLocation(); // Use useLocation hook to get location object
   const [isCollapse, setIsCollapse] = useState(false);
-  const path = location?.pathname; // Use optional chaining to avoid errors if location is undefined
-
-  // Log location and path
-  console.log('Location:', location);
-  console.log('Path:', path);
+  const path = location ? location.pathname : ''; // Check if location is defined before accessing pathname
 
   return (
     <header className="header">
@@ -30,16 +27,16 @@ export default function Header(props) {
         <ul className="hidden text-theme-blue tracking-widest items-center lg:flex flex-row mt-0">
           <li>
             <Button
-              className={`${path === '/' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline`}
+              className={`${path === '/' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline font-semibold`}
               type="link"
-              href=""
+              href="/"
             >
               Home
             </Button>
           </li>
           <li className="py-2 lg:py-0">
             <Button
-              className={`${path === '/team' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline`}
+              className={`${path === '/team' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline font-semibold`}
               type="link"
               href="/team"
             >
@@ -48,7 +45,7 @@ export default function Header(props) {
           </li>
           <li className="py-2 lg:py-0">
             <Button
-              className={`${path === '/project' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline`}
+              className={`${path === '/project' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline font-semibold`}
               type="link"
               href="/project"
             >
@@ -57,7 +54,7 @@ export default function Header(props) {
           </li>
           <li>
             <Button
-              className="text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
+              className="text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200 font-semibold"
               type="link"
               href="/discuss-project"
             >
