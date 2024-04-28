@@ -3,12 +3,12 @@ import Fade from 'react-reveal/Fade';
 import { Transition } from '@headlessui/react';
 import Button from '../elements/Button';
 import BrandIcon from '../components/BrandIcon';
-import { useLocation } from 'react-router-dom'; // Import useLocation hook from react-router-dom
+import { useLocation } from 'react-router-dom'; 
 
 export default function Header() {
-  const location = useLocation(); // Use useLocation hook to get location object
+  const location = useLocation();
   const [isCollapse, setIsCollapse] = useState(false);
-  const path = location ? location.pathname : ''; // Check if location is defined before accessing pathname
+  const path = location ? location.pathname : '';
 
   return (
     <header className="header">

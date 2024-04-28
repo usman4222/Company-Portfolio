@@ -1,5 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -67,7 +65,7 @@ Button.defaultProps = {
   target: '',
   style: {},
   children: '',
-  isExternal: '',
+  isExternal: false, 
 };
 
 Button.propTypes = {
@@ -76,7 +74,6 @@ Button.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   target: PropTypes.string,
-  // eslint-disable-next-line react/forbid-prop-types
   style: PropTypes.object,
   children: PropTypes.string,
   isExternal: PropTypes.bool,
