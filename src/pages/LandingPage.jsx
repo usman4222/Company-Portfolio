@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Service from '../components/Service';
 import Portfolio from '../components/Portfolio';
+import Advantage from '../components/Atvantage';
 
 export default class LandingPage extends Component {
   componentDidMount() {
@@ -19,8 +20,8 @@ export default class LandingPage extends Component {
         <Hero {...this.props} />
         <Service data={Data.service} />
         <Portfolio data={Data.portfolio} />
-        {/* <Advantage data={Data.advantage} />
-        <Testimonial data={Data.testimonial} /> */}
+        <Advantage data={Data.advantage} />
+        {/* <Testimonial data={Data.testimonial} /> */}
         {/* <Discuss /> */}
         <Footer />
       </>
