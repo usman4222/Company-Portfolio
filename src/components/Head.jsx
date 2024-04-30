@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Button from '../elements/Button';
-import BrandIcon from '../Components/BrandIcon';
+import BrandIcon from './BrandIcon';
 
 export default function Header() {
   const location = useLocation();
