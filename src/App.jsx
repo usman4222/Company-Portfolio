@@ -1,15 +1,14 @@
 import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import LandingPge from './Pages/LandingPge';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPge from './Pages/LandingPge';
 
 function App() {
   return (
-    <div>Project</div>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path='/' element={<LandingPge />} />
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LandingPge />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
