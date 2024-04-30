@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Hero from '../Components/HeroSection';
-import Header from '../Components/Head';
+import Foot from '../Components/Foot';
+import HeroSecion from '../Components/HeroSection';
+import Head from '../Components/Head';
 
 export default class LandingPage extends Component {
     componentDidMount() {
@@ -10,8 +11,9 @@ export default class LandingPage extends Component {
     render() {
         return (
             <>
-                <Header {...this.props} />
-                <Hero {...this.props} />
+                <Head {...this.props} />
+                <HeroSecion {...this.props} />
+                <Foot />
             </>
         );
     }
