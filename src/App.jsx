@@ -1,12 +1,6 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LandingPage from './Pages/LandingPage'
 import './assets/css/styles.css';
-import LandingPage from './pages/LandingPage';
-import DiscussProjectPage from './pages/DiscussProjectPage';
-import ProjectDetailPage from './pages/ProjectDetailPage';
-import ProjectPage from './pages/ProjectPage';
-import TeamPage from './pages/Team';
-import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
 
@@ -14,14 +8,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/discuss-project' element={<DiscussProjectPage />} />
-        <Route path='/project/:id' element={<ProjectDetailPage />} />
-        <Route path='/project' element={<ProjectPage />} />
-        <Route path='/team' element={<TeamPage />} />
-        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

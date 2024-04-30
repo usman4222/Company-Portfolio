@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Transition } from '@headlessui/react';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import Button from '../elements/Button';
-import BrandIcon from '../components/BrandIcon';
-import { useLocation } from 'react-router-dom'; 
+import BrandIcon from '../Components/BrandIcon';
 
 export default function Header() {
   const location = useLocation();
@@ -12,8 +11,13 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Fade>
-        <div className="flex justify-between px-4 lg:px-0">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className='flex justify-between w-full'
+      >
+        <div className="flex justify-between w-full lg:w-auto px-4 lg:px-0">
           <BrandIcon />
 
           <button className="block text-theme-blue lg:hidden focus:outline-none" onClick={() => setIsCollapse(!isCollapse)}>
@@ -62,58 +66,54 @@ export default function Header() {
             </Button>
           </li>
         </ul>
-      </Fade>
+      </motion.div>
 
-      <Transition
-        show={isCollapse}
-        enter="transition-opacity duration-400"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-400"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="absolute w-full lg:hidden flex justify-between"
+        style={{ top: '4rem' }}
       >
-        <Fade>
-          <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden">
-            <li className="py-2 bg-white">
-              <Button
-                className={`${path === '/' ? 'active-link' : ''} px-10 no-underline hover:underline`}
-                type="link"
-                href="/"
-              >
-                Home
-              </Button>
-            </li>
-            <li className="py-2 bg-white">
-              <Button
-                className={`${path === '/team' ? 'active-link' : ''} px-10 no-underline hover:underline`}
-                type="link"
-                href="/team"
-              >
-                Team
-              </Button>
-            </li>
-            <li className="py-2 bg-white">
-              <Button
-                className={`${path === '/project' ? 'active-link' : ''} px-10 no-underline hover:underline`}
-                type="link"
-                href="/project"
-              >
-                Project
-              </Button>
-            </li>
-            <li className="mx-auto my-9 bg-white">
-              <Button
-                className="mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
-                type="link"
-                href="/discuss-project"
-              >
-                Discuss Project
-              </Button>
-            </li>
-          </ul>
-        </Fade>
-      </Transition>
+        <ul className={`${isCollapse ? 'block' : 'hidden'} z-50 flex flex-col text-theme-blue tracking-widest my-6 bg-white w-full border-b-2 border-gray-300`}>
+          <li className="py-2 bg-white">
+            <Button
+              className={`${path === '/' ? 'active-link' : ''} px-10 no-underline hover:underline`}
+              type="link"
+              href="/"
+            >
+              Home
+            </Button>
+          </li>
+          <li className="py-2 bg-white">
+            <Button
+              className={`${path === '/team' ? 'active-link' : ''} px-10 no-underline hover:underline`}
+              type="link"
+              href="/team"
+            >
+              Team
+            </Button>
+          </li>
+          <li className="py-2 bg-white">
+            <Button
+              className={`${path === '/project' ? 'active-link' : ''} px-10 no-underline hover:underline`}
+              type="link"
+              href="/project"
+            >
+              Project
+            </Button>
+          </li>
+          <li className="mx-auto my-9 bg-white">
+            <Button
+              className="mx-auto px-5 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
+              type="link"
+              href="/discuss-project"
+            >
+              Discuss Project
+            </Button>
+          </li>
+        </ul>
+      </motion.div>
     </header>
   );
 }
