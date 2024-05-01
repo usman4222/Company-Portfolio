@@ -13,8 +13,8 @@ const Advantage = ({ data }) => {
             <div className="container mx-auto">
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    animate={controls}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-5xl text-theme-blue text-center font-bold"
                 >
                     Why Choose Us
@@ -22,7 +22,7 @@ const Advantage = ({ data }) => {
 
                 <motion.p
                     initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={controls}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="font-light text-lg text-gray-400 text-center mb-12 sm:mb-5 xl:mb-0"
                 >

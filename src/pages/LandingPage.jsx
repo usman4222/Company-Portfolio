@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
@@ -7,11 +7,10 @@ import Data from '../json/landingPage.json';
 import Portfolio from '../components/Portfolio';
 import Advantage from '../components/Advantage';
 import Testimonial from '../components/Testimonial';
+import Discuss from '../components/Discuss';
 
 const LandingPage = (props) => {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []); 
+
 
     return (
         <>
@@ -21,6 +20,7 @@ const LandingPage = (props) => {
             <Portfolio data={Data.portfolio} />
             <Advantage data={Data.advantage} />
             <Testimonial data={Data.testimonial} />
+            <Discuss/>
             <Footer />
         </>
     );

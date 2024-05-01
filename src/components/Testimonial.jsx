@@ -1,17 +1,36 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import { motion } from 'framer-motion';
 import SashaImage from '../assets/images/Sasha.jpg';
 import KrugerImage from '../assets/images/Kruger.jpg';
 import ReinerImage from '../assets/images/Reiner.jpg';
+import UseScrollAnimation from '../elements/Scroller/UseScrollAnimation';
 
 const Testimonial = ({ data }) => {
+
+    const { controls, cardsRef } = UseScrollAnimation();
+
     return (
-        <section className="container mx-auto">
-            <h1 className="text-5xl text-theme-blue text-center font-bold">Testimonials</h1>
-            <p className="font-light text-lg text-gray-400 text-center mb-3 sm:mb-3 xl:mb-4">
+        <section className="container mx-auto" ref={cardsRef}>
+            <motion.h1
+                initial={{ opacity: 0, y: -50 }}
+                animate={controls}
+                transition={{ duration: 0.5 }}
+                className="text-5xl text-theme-blue text-center font-bold"
+            >
+                Testimonials
+            </motion.h1>
+            <motion.p
+                initial={{ opacity: 0, y: -50 }}
+                animate={controls}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="font-light text-lg text-gray-400 text-center mb-3 sm:mb-3 xl:mb-4"
+            >
                 What they said about us.
-            </p>
+            </motion.p>
+
+
             <Splide
                 options={{
                     type: 'loop',
@@ -40,5 +59,6 @@ const Testimonial = ({ data }) => {
         </section>
     );
 };
+
 
 export default Testimonial;
