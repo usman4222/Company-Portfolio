@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LandingPge from './Pages/LandingPge';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<LandingPge />} />
+        <Route path='/' element={<LandingPage />} />
       </Routes>
     </BrowserRouter>
   );
