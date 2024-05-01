@@ -6,6 +6,7 @@ import Service from '../components/Service';
 import Data from '../json/landingPage.json';
 import Portfolio from '../components/Portfolio';
 import Advantage from '../components/Advantage';
+import Testimonial from '../components/Testimonial';
 
 const LandingPage = (props) => {
     // useEffect(() => {
@@ -19,6 +20,7 @@ const LandingPage = (props) => {
             <Service data={Data.service} />
             <Portfolio data={Data.portfolio} />
             <Advantage data={Data.advantage} />
+            <Testimonial data={Data.testimonial} />
             <Footer />
         </>
     );
