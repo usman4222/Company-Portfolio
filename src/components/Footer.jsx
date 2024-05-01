@@ -2,7 +2,7 @@ import React from 'react';
 import BrandIcon from './BrandIcon';
 import Button from '../elements/Button';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className="bg-gray-50 border-t border-gray-200 pb-6">
       <div className="container flex-col mx-auto ">
@@ -59,3 +59,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;

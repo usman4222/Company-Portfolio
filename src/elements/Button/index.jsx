@@ -2,18 +2,16 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function Button(props) {
-  const {
-    onClick,
-    type,
-    isExternal,
-    href,
-    className,
-    style,
-    target,
-    children,
-  } = props;
-
+const Button = ({
+  onClick,
+  type,
+  isExternal,
+  href,
+  className,
+  style,
+  target,
+  children,
+}) => {
   const onClickHandler = () => {
     if (onClick) onClick();
   };
@@ -78,3 +76,5 @@ Button.propTypes = {
   children: PropTypes.string,
   isExternal: PropTypes.bool,
 };
+
+export default Button;

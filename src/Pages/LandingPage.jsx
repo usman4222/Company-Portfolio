@@ -15,6 +15,6 @@ const LandingPage = (props) => {
             <Footer />
         </>
     );
-};
+}
 
 export default LandingPage;

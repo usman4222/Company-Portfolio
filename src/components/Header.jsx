@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Button from '../elements/Button';
 import BrandIcon from './BrandIcon';
 
-export default function Header() {
+const Header = () => {
   const location = useLocation();
   const [isCollapse, setIsCollapse] = useState(false);
   const path = location ? location.pathname : '';
@@ -117,3 +117,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

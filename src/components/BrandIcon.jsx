@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../elements/Button';
 
-export default function BrandIcon() {
+const BrandIcon = () => {
   return (
     <Button
       className=""
@@ -15,3 +15,5 @@ export default function BrandIcon() {
     </Button>
   );
 }
+
+export default BrandIcon;
