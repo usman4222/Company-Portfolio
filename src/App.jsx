@@ -5,6 +5,7 @@ import DiscussProjectPage from './pages/DiscussProjectPage'
 import ProjectDetailPage from './pages/ProjectDetailPage'
 import ProjectPage from './pages/ProjectPage'
 import Team from './pages/Team'
+import NotFoundPage from './pages/NotFoundPage'
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/project/:id' element={<ProjectDetailPage />} />
         <Route path='/project' element={<ProjectPage />} />
         <Route path='/team' element={<Team />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
