@@ -3,34 +3,10 @@ import { motion, useAnimation } from 'framer-motion';
 import WebImage from '../assets/images/Web.png';
 import MobileImage from '../assets/images/Mobile.png';
 import DesignImage from '../assets/images/Design.png';
+import UseScrollAnimation from '../elements/Scroller/UseScrollAnimation';
 
 const Service = ({ data }) => {
-  const controls = useAnimation();
-  const cardsRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const scrollHandler = () => {
-      const elementPosition = cardsRef.current.getBoundingClientRect().top;
-      const scrollPosition = window.innerHeight / 1.5;
-
-      if (elementPosition < scrollPosition && !isVisible) {
-        setIsVisible(true);
-      }
-    };
-
-    const updateAnimation = async () => {
-      if (isVisible) {
-        await controls.start({ opacity: 1, y: 0 });
-      }
-    };
-
-    window.addEventListener('scroll', scrollHandler);
-
-    updateAnimation();
-
-    return () => window.removeEventListener('scroll', scrollHandler);
-  }, [controls, isVisible]);
+  const { controls, cardsRef } = UseScrollAnimation();
 
   return (
     <div className="bg-gray-50">
@@ -58,7 +34,7 @@ const Service = ({ data }) => {
               key={index}
               initial={{ opacity: 0, y: 500 }}
               animate={controls}
-              transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
+              transition={{ duration: 1, delay: 0.5 + index * 0.5 }}
               style={{ opacity: 0, y: 500 }}
             >
               <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
