@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Button from '../elements/Button';
-
-// Import images directly from JSON
 import RecruitingImage from '../assets/images/Recruiting.png';
 import StreamImage from '../assets/images/Stream.png';
 import FreelanceImage from '../assets/images/Freelance.png';
