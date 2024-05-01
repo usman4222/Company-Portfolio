@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import Header from '../Components/Header';
-import Hero from '../Components/Hero';
-import Footer from '../Components/Footer';
+import Header from '../Components/Header.jsx';
+import Hero from '../Components/Hero.jsx';
+import Footer from '../Components/Footer.jsx';
 
 const LandingPage = (props) => {
     useEffect(() => {
