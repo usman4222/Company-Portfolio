@@ -16,7 +16,6 @@ export default function Form(props) {
   const onChange = (event) => {
     const target = {
       target: {
-        // eslint-disable-next-line object-shorthand
         name: name,
         value: event.target.value,
       },
