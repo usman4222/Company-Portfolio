@@ -111,25 +111,25 @@
         {
             "name": "Sasha Rose",
             "company": "Owner, Surveyor Corps",
-            "testimoni": "Thanks for Racxstudio, you guys are the best! Keep up the great work!",
+            "testimoni": "Thanks for 9TailsTech, you guys are the best! Keep up the great work!",
             "imageUrl": "assets/images/Sasha.jpg"
         },
         {
             "name": "Kruger Khan",
             "company": "Director, Shultan Oil",
-            "testimoni": "I just wanted to let you know that it’s been great working with Racxstudio.",
+            "testimoni": "I just wanted to let you know that it’s been great working with 9TailsTech.",
             "imageUrl": "assets/images/Kruger.jpg"
         },
         {
             "name": "Reiner John",
             "company": "CEO, Marley CO",
-            "testimoni": "Racxstudio is so great. Thank you so much for a job well done.",
+            "testimoni": "9TailsTech is so great. Thank you so much for a job well done.",
             "imageUrl": "assets/images/Reiner.jpg"
         }
     ],
     "team": [
         {
-            "name": "Rach David",
+            "name": "9TailsTech David",
             "position": "CEO",
             "imageUrl": "assets/images/CEO.jpg"
         },

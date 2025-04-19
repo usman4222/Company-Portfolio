@@ -21,7 +21,7 @@ const Footer = () => {
               Office
             </h1>
             <p className="text-lg text-gray-400 font-light">
-              rac.hafidz@gmail.com
+              usman4243ch@gmail.com
             </p>
             <p className="text-lg text-gray-400 font-light">
               Klaten, Central Java, Indonesia
@@ -31,20 +31,20 @@ const Footer = () => {
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
               Social
             </h1>
-            <Button href="https://www.instagram.com/racmathafidz/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            <Button href="https://www.instagram.com/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               Instagram
             </Button>
-            <Button href="https://www.linkedin.com/in/racmat-hafidz-89982a156/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            <Button href="https://www.linkedin.com/in/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               LinkedIn
             </Button>
-            <Button href="https://github.com/racmathafidz" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            <Button href="https://github.com/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               Github
             </Button>
           </div>
         </div>
         <div className="flex-col text-center mt-7">
           <p className="text-lg text-gray-400 font-light">
-            Copyright 2021 - All rights reserved - Racxstudio
+            Copyright 2023 - All rights reserved - 9TailsTech
           </p>
           {/* <div className="flex-row">
             <p className="inline-block text-lg text-gray-400 font-light">
